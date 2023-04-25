@@ -72,10 +72,10 @@ fprintf('Y_cycle: %.4f\n', std_Y_cycle);
 fprintf('C_cycle: %.4f\n', std_C_cycle);
 fprintf('I_cycle: %.4f\n', std_I_cycle);
 fprintf('G_cycle: %.4f\n', std_G_cycle);
-Y_rsd = std(Y_cycle) / mean(Y_cycle) * 100;
-C_rsd = std(C_cycle) / mean(C_cycle) * 100;
-I_rsd = std(I_cycle) / mean(I_cycle) * 100;
-G_rsd = std(G_cycle) / mean(G_cycle) * 100;
+Y_rsd = std(Y_cycle) / std(Y_cycle) * 100;
+C_rsd = std(C_cycle) / std(Y_cycle) * 100;
+I_rsd = std(I_cycle) / std(Y_cycle) * 100;
+G_rsd = std(G_cycle) / std(Y_cycle) * 100;
 fprintf('Relative Standard Deviations:\n');
 fprintf('Y_cycle: %.4f%%\n', Y_rsd);
 fprintf('C_cycle: %.4f%%\n', C_rsd);
@@ -100,7 +100,7 @@ T = table(std_Y_cycle, std_C_cycle, std_I_cycle, std_G_cycle, Y_rsd, C_rsd, I_rs
 
 disp(T)
 
-%% Comment: The results indicate that the cyclical components of output (Y), consumption (C), investment (I), and government spending (G) have standard deviations ranging from 0.2112 to 0.2438, and relative standard deviations ranging from 1.7054% to 2.1316%. The contemporaneous output correlations of cyclical components suggest that there are high positive correlations among Y, C, I, and G, with correlation coefficients ranging from 0.9786 to 1.0000. This indicates that the cyclical fluctuations in these variables tend to move together. The relative standard deviation of investment is the highest among the four variables, at 2.1316%. This suggests that investment is the most volatile of the four components. The relative standard deviation of consumption is slightly higher than that of output, at 1.7531% and 1.7054%, respectively. This suggests that consumption is also subject to some volatility, although less so than investment.
+%% Comment: The first section of the table presents the standard deviations of the cyclical components of the four variables. It shows that investment (I) has the largest standard deviation (0.0302), followed by output (Y) and consumption (C), while government spending (G) has the smallest standard deviation (0.0137). The second section shows the relative standard deviations of the cyclical components (RSDs) of the four variables. The RSD is a measure of the relative volatility of a variable's cyclical component compared to the cyclical component of output. Therefore, in the given data, the RSD of the cyclical component of consumption (C_cycle) is 88.868%, indicating that its volatility is lower than that of output's cyclical component. Similarly, the RSD of the cyclical component of investment (I_cycle) is 170.55%, indicating that its volatility is higher than that of output's cyclical component. 
 
 % Splitting the data into two parts based on the date range
 Y_cycle1 = Y_cycle(1:112,:);
@@ -122,10 +122,10 @@ fprintf('Y_cycle: %.4f\n', std_Y_cycle1);
 fprintf('C_cycle: %.4f\n', std_C_cycle1);
 fprintf('I_cycle: %.4f\n', std_I_cycle1);
 fprintf('G_cycle: %.4f\n', std_G_cycle1);
-Y_rsd1 = std(Y_cycle1) / mean(Y_cycle1) * 100;
-C_rsd1 = std(C_cycle1) / mean(C_cycle1) * 100;
-I_rsd1 = std(I_cycle1) / mean(I_cycle1) * 100;
-G_rsd1 = std(G_cycle1) / mean(G_cycle1) * 100;
+Y_rsd1 = std(Y_cycle1) / std(Y_cycle1) * 100;
+C_rsd1 = std(C_cycle1) / std(Y_cycle1) * 100;
+I_rsd1 = std(I_cycle1) / std(Y_cycle1) * 100;
+G_rsd1 = std(G_cycle1) / std(Y_cycle1) * 100;
 fprintf('Relative Standard Deviations for subsample 1:\n');
 fprintf('Y_cycle: %.4f%%\n', Y_rsd1);
 fprintf('C_cycle: %.4f%%\n', C_rsd1);
@@ -148,7 +148,7 @@ T1 = table(std_Y_cycle1, std_C_cycle1, std_I_cycle1, std_G_cycle1, Y_rsd1, C_rsd
                             'Corr_G_Y', 'Corr_G_C', 'Corr_G_I', 'Corr_G_G'});
 disp(T1)
 
-%% Comment: The subsample analysis shows that cyclical components of output, consumption, investment, and government spending are highly correlated, with output and consumption being almost perfectly correlated. The relative standard deviation of the cyclical components for each variable is around 1.4%. Compared to the results of the full sample, the subsample analysis shows a slightly lower degree of cyclical volatility.
+%% Comment: The results from subsample 1 again show that investments is the most volatile time series among the four. Furthermore, the correlation between output, consumption and investment is positive indicating the series move procyclical while government consumption appears to move countercyclical with output.
 
 % Summary table for the "from 2008Q1" sample (hereafter called "subsample 2"
 std_Y_cycle2 = std(Y_cycle2);
@@ -160,10 +160,10 @@ fprintf('Y_cycle: %.4f\n', std_Y_cycle2);
 fprintf('C_cycle: %.4f\n', std_C_cycle2);
 fprintf('I_cycle: %.4f\n', std_I_cycle2);
 fprintf('G_cycle: %.4f\n', std_G_cycle2);
-Y_rsd1 = std(Y_cycle2) / mean(Y_cycle2) * 100;
-C_rsd1 = std(C_cycle2) / mean(C_cycle2) * 100;
-I_rsd1 = std(I_cycle2) / mean(I_cycle2) * 100;
-G_rsd1 = std(G_cycle2) / mean(G_cycle2) * 100;
+Y_rsd1 = std(Y_cycle2) / std(Y_cycle2) * 100;
+C_rsd1 = std(C_cycle2) / std(Y_cycle2) * 100;
+I_rsd1 = std(I_cycle2) / std(Y_cycle2) * 100;
+G_rsd1 = std(G_cycle2) / std(Y_cycle2) * 100;
 fprintf('Relative Standard Deviations for subsample 2:\n');
 fprintf('Y_cycle: %.4f%%\n', Y_rsd1);
 fprintf('C_cycle: %.4f%%\n', C_rsd1);
@@ -186,8 +186,8 @@ T2 = table(std_Y_cycle2, std_C_cycle2, std_I_cycle2, std_G_cycle2, Y_rsd1, C_rsd
                             'Corr_G_Y', 'Corr_G_C', 'Corr_G_I', 'Corr_G_G'});
 disp(T2)
 
-%% Comment: For subsample 2, the standard deviations of cyclical components are much lower than both the full sample and subsample 1. The relative standard deviations are also much lower for subsample 2. The contemporaneous output correlations of cyclical components for subsample 2 show higher correlation between Y and G compared to subsample 1, but lower correlation between Y and I. Overall, subsample 2 shows much lower volatility and correlation compared to the full sample and subsample 1.
-
+%% Comment: The results from subsample 2 again show that investments is the most volatile time series among the four. Similarly to subsample 1, the correlation between output, consumption and investment is positive, indicating the series move procyclical. However, government consumption now also moves procyclical with output.
+ 
 save('my_workspace.mat')
 
 
