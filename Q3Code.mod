@@ -68,7 +68,6 @@ end;
 
 stoch_simul(periods=2100, irf =20, order=1); 
 
-
 %% the following command lines can be used to plot the impulse response functions to a 1% decrease in TFP. 
 
 %shocks;
@@ -78,8 +77,6 @@ stoch_simul(periods=2100, irf =20, order=1);
 %stoch_simul(periods=2100, irf =20, order=1); 
 
 %% note: one would need to switch the sign of the shock in the (a) equations (i.e. (a) = rho_a * (a(-1)) + ea becomes (a) = rho_a * (a(-1)) - ea)
-
-
 
 
 
