@@ -60,7 +60,7 @@ xlabel('Year');
 ylabel('Cyclical Component') 
 legend('GDP', 'Household Consumption', 'Capital Formation', 'Government Consumption');
 
-%% Comment: The trend component of GDP, consumption, investment, and government expenditure is obtained using the HP filter with a smoothing parameter of 1600. The trend component is much smoother than the original time series and captures the long-term trends in the data.  The cyclical components for each variable are then plotted on the same graph. The filtered cyclical component is obtained by subtracting the trend from the original series. It represents the short-term variations in the series that are not explained by the trend. Positive values of the cyclical component indicate that the series is above its trend, while negative values indicate that the series is below its trend. From the curves, it appears that investments is the most volatile time series among the four. 
+%% Comment: The trend component of GDP, consumption, investment, and government expenditure is obtained using the HP filter with a smoothing parameter of 1600. The trend component is much smoother than the original time series and captures the long-term trends in the data. The filtered cyclical component is obtained by subtracting the trend from the original series. It represents the short-term variations in the series that are not explained by the trend. Positive values of the cyclical component indicate that the series is above its trend, while negative values indicate that the series is below its trend. From the curves, it appears that investments is the most volatile time series among the four. 
 
 %creating summary table of business cycle stylized facts (full sample)
 std_Y_cycle = std(Y_cycle);
