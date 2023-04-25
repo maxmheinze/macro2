@@ -39,13 +39,13 @@ model;
     (yss*exp(y))/(nss*exp(n)) = (((css*exp(c))^sigma)*theta)/(gamma*(1-(nss*exp(n))));
     (1-alpha-gamma) * yss*exp(y) = exp(p) * (enss*exp(en));
     (yss*exp(y)) = (css*exp(c)) + (iss*exp(inve)) + exp(p) * (enss*exp(en));
-    (a) = rho_a * (a(-1)) + ea;
+    (a) = rho_a * (a(-1)) - ea;
     (p) = rho_p * (p(-1)) + ep;
     (yss*exp(y)) = exp(a) * (kss*exp(k(-1)))^(alpha) * (nss*exp(n))^(gamma) * (enss*exp(en))^(1-alpha-gamma);
     (kss*exp(k)) = (iss*exp(inve)) + (1-delta) * (kss*exp(k(-1)));
 end;
 
-%% We switched the sign before ea in the equation (a) = rho_a * (a(-1)) - ea to construct and plot impulse responses to a 1% productivity decrease;
+%% See the comment below on switching the sign before ea in the equation (a) = rho_a * (a(-1)) - ea
  
 initval;
     k = 0;
@@ -63,20 +63,21 @@ steady;
 check;
 
 shocks;
-var ep; stderr 0.1;
+var ea; stderr 0.01;
 end;
 
 stoch_simul(periods=2100, irf =20, order=1); 
 
-%% the following command lines can be used to plot the impulse response functions to a 1% decrease in TFP. 
+%% note: we needed to switch the sign of the shock in the (a) equations (i.e. (a) = rho_a * (a(-1)) + ea becomes (a) = rho_a * (a(-1)) - ea)
+
+%% uncomment the following and switch back the sign to get the plots for (d)
 
 %shocks;
-%var ea; stderr 0.01;
+%var ep; stderr 0.1;
 %end;
 
 %stoch_simul(periods=2100, irf =20, order=1); 
 
-%% note: one would need to switch the sign of the shock in the (a) equations (i.e. (a) = rho_a * (a(-1)) + ea becomes (a) = rho_a * (a(-1)) - ea)
 
 
 
