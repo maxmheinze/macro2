@@ -1,0 +1,396 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=latex 2020.12.12)  25 APR 2023 21:52
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**Assignment_1_code.tex
+(./Assignment_1_code.tex
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-12-07> xparse <2020-03-03> (/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count177
+\c@section=\count178
+\c@subsection=\count179
+\c@subsubsection=\count180
+\c@paragraph=\count181
+\c@subparagraph=\count182
+\c@figure=\count183
+\c@table=\count184
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 105.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: dvips.def on input line 147.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2020-09-24 L3 backend support: dvips
+\l__pdf_internal_box=\box47
+\g__pdf_backend_object_int=\count185
+\l__pdf_backend_content_box=\box48
+\l__pdf_backend_model_box=\box49
+\g__pdf_backend_annotation_int=\count186
+\g__pdf_backend_link_int=\count187
+\g__pdf_backend_link_sf_int=\count188
+) (/Users/heinzemax/Documents/GitHub/macro2/assignment1/html/.texpadtmp/Assignment_1_code.aux)
+\openout1 = `Assignment_1_code.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+ [1
+
+]
+Overfull \hbox (48.74657pt too wide) in paragraph at lines 80--80
+[]\OT1/cmtt/m/n/10 data.Year=datetime(data.TIME,'InputFormat','uuuu-QQQ','Format','uuuu-QQQ');[] 
+ []
+
+
+Overfull \hbox (200.99524pt too wide) in paragraph at lines 80--80
+[]\OT1/cmtt/m/n/10 % Remove the first 20 years of GDP data to make time series balanced (since they contain missing values)[] 
+ []
+
+
+Overfull \hbox (374.24373pt too wide) in paragraph at lines 80--80
+[]\OT1/cmtt/m/n/10 plot(data.Year, data.GDP, data.Year, data.HouseholdConsumption, data.Year, data.CapitalFormation, data.Year, data.GovernmentConsumption);[] 
+ []
+
+
+Overfull \hbox (106.49606pt too wide) in paragraph at lines 80--80
+[]\OT1/cmtt/m/n/10 legend('GDP', 'Household Consumption', 'Capital Formation', 'Government Consumption');[] 
+ []
+
+File: Assignment_1_code_01.eps Graphic file (type eps)
+<Assignment_1_code_01.eps> [2]
+Overfull \hbox (174.74547pt too wide) in paragraph at lines 104--104
+[]\OT1/cmtt/m/n/10 %obtaining the stationary (cyclical) component using the HP filter and plot the cyclical components[] 
+ []
+
+
+Overfull \hbox (106.49606pt too wide) in paragraph at lines 104--104
+[]\OT1/cmtt/m/n/10 legend('GDP', 'Household Consumption', 'Capital Formation', 'Government Consumption');[] 
+ []
+
+File: Assignment_1_code_02.eps Graphic file (type eps)
+<Assignment_1_code_02.eps> [3]
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 149--149
+[]\OT1/cmtt/m/n/10 %creating summary table of business cycle stylized facts (full sample)[] 
+ []
+
+[4]
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 149--149
+[]\OT1/cmtt/m/n/10 disp('Contemporaneous Output Correlations of Cyclical Components')[] 
+ []
+
+
+Overfull \hbox (143.24574pt too wide) in paragraph at lines 149--149
+[]\OT1/cmtt/m/n/10 T = table(std_Y_cycle, std_C_cycle, std_I_cycle, std_G_cycle, Y_rsd, C_rsd, I_rsd, G_rsd, ...[] 
+ []
+
+
+Overfull \hbox (101.24611pt too wide) in paragraph at lines 149--149
+[]          \OT1/cmtt/m/n/10 corr_matrix(1,1), corr_matrix(1,2), corr_matrix(1,3), corr_matrix(1,4), ...[] 
+ []
+
+
+Overfull \hbox (101.24611pt too wide) in paragraph at lines 149--149
+[]          \OT1/cmtt/m/n/10 corr_matrix(2,1), corr_matrix(2,2), corr_matrix(2,3), corr_matrix(2,4), ...[] 
+ []
+
+
+Overfull \hbox (101.24611pt too wide) in paragraph at lines 149--149
+[]          \OT1/cmtt/m/n/10 corr_matrix(3,1), corr_matrix(3,2), corr_matrix(3,3), corr_matrix(3,4), ...[] 
+ []
+
+
+Overfull \hbox (101.24611pt too wide) in paragraph at lines 149--149
+[]          \OT1/cmtt/m/n/10 corr_matrix(4,1), corr_matrix(4,2), corr_matrix(4,3), corr_matrix(4,4), ...[] 
+ []
+
+
+Overfull \hbox (195.74529pt too wide) in paragraph at lines 149--149
+[]          \OT1/cmtt/m/n/10 'VariableNames', {'Std_Y', 'Std_C', 'Std_I', 'Std_G', 'RSD_Y', 'RSD_C', 'RSD_I', 'RSD_G', ...[] 
+ []
+
+
+Overfull \hbox (69.74638pt too wide) in paragraph at lines 149--149
+[]                            \OT1/cmtt/m/n/10 'Corr_Y_Y', 'Corr_Y_C', 'Corr_Y_I', 'Corr_Y_G', ...[] 
+ []
+
+
+Overfull \hbox (69.74638pt too wide) in paragraph at lines 149--149
+[]                            \OT1/cmtt/m/n/10 'Corr_C_Y', 'Corr_C_C', 'Corr_C_I', 'Corr_C_G', ...[] 
+ []
+
+
+Overfull \hbox (69.74638pt too wide) in paragraph at lines 149--149
+[]                            \OT1/cmtt/m/n/10 'Corr_I_Y', 'Corr_I_C', 'Corr_I_I', 'Corr_I_G', ...[] 
+ []
+
+
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 149--149
+[]                            \OT1/cmtt/m/n/10 'Corr_G_Y', 'Corr_G_C', 'Corr_G_I', 'Corr_G_G'});[] 
+ []
+
+
+Overfull \hbox (1103.98737pt too wide) in paragraph at lines 174--174
+[]     \OT1/cmtt/m/n/10 Std_Y      Std_C      Std_I      Std_G     RSD_Y     RSD_C     RSD_I     RSD_G     Corr_Y_Y    Corr_Y_C    Corr_Y_I    Corr_Y_G    Corr_C_Y    Corr_C_C    Corr_C_I    Corr_C_G    Corr_I_Y    Corr_I_C    Corr_I_I    Corr_I_G    Corr_G_Y    Corr_G_C    Corr_G_I    Corr_G_G[] 
+ []
+
+
+Overfull \hbox (1103.98737pt too wide) in paragraph at lines 174--174
+[]    \OT1/cmtt/m/n/10 _______    _______    _______    _______    ______    ______    ______    ______    ________    ________    ________    ________    ________    ________    ________    ________    ________    ________    ________    ________    ________    ________    ________    ________[] 
+ []
+
+
+Overfull \hbox (1082.98755pt too wide) in paragraph at lines 174--174
+[]    \OT1/cmtt/m/n/10 0.22085    0.21558    0.24376    0.21121    1.7054    1.7531    2.1316    1.8319       1        0.99847     0.99211     0.99132     0.99847        1        0.99241     0.99003     0.99211     0.99241        1        0.97858     0.99132     0.99003     0.97858        1[] 
+ []
+
+[5]
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 225--225
+[]\OT1/cmtt/m/n/10 % Summary table for the "until 2007Q4" sample (hereafter called "subsample 1"[] 
+ []
+
+
+Overfull \hbox (38.24666pt too wide) in paragraph at lines 225--225
+[]\OT1/cmtt/m/n/10 fprintf('Standard deviations of cyclical components for subsample 1:\n');[] 
+ []
+
+[6]
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 225--225
+[]\OT1/cmtt/m/n/10 corr_matrix1 = corrcoef([Y_cycle1, C_cycle1, I_cycle1, G_cycle1]);[] 
+ []
+
+
+Overfull \hbox (85.49625pt too wide) in paragraph at lines 225--225
+[]\OT1/cmtt/m/n/10 disp('Contemporaneous Output Correlations of Cyclical Components for subsample 1')[] 
+ []
+
+
+Overfull \hbox (69.74638pt too wide) in paragraph at lines 225--225
+[]\OT1/cmtt/m/n/10 disp('-----------------------------------------------------------------------')[] 
+ []
+
+
+Overfull \hbox (190.49533pt too wide) in paragraph at lines 225--225
+[]\OT1/cmtt/m/n/10 T1 = table(std_Y_cycle1, std_C_cycle1, std_I_cycle1, std_G_cycle1, Y_rsd1, C_rsd1, I_rsd1, G_rsd1, ...[] 
+ []
+
+
+Overfull \hbox (122.24593pt too wide) in paragraph at lines 225--225
+[]          \OT1/cmtt/m/n/10 corr_matrix1(1,1), corr_matrix1(1,2), corr_matrix1(1,3), corr_matrix1(1,4), ...[] 
+ []
+
+
+Overfull \hbox (122.24593pt too wide) in paragraph at lines 225--225
+[]          \OT1/cmtt/m/n/10 corr_matrix1(2,1), corr_matrix1(2,2), corr_matrix1(2,3), corr_matrix1(2,4), ...[] 
+ []
+
+
+Overfull \hbox (122.24593pt too wide) in paragraph at lines 225--225
+[]          \OT1/cmtt/m/n/10 corr_matrix1(3,1), corr_matrix1(3,2), corr_matrix1(3,3), corr_matrix1(3,4), ...[] 
+ []
+
+
+Overfull \hbox (122.24593pt too wide) in paragraph at lines 225--225
+[]          \OT1/cmtt/m/n/10 corr_matrix1(4,1), corr_matrix1(4,2), corr_matrix1(4,3), corr_matrix1(4,4), ...[] 
+ []
+
+
+Overfull \hbox (195.74529pt too wide) in paragraph at lines 225--225
+[]          \OT1/cmtt/m/n/10 'VariableNames', {'Std_Y', 'Std_C', 'Std_I', 'Std_G', 'RSD_Y', 'RSD_C', 'RSD_I', 'RSD_G', ...[] 
+ []
+
+
+Overfull \hbox (69.74638pt too wide) in paragraph at lines 225--225
+[]                            \OT1/cmtt/m/n/10 'Corr_Y_Y', 'Corr_Y_C', 'Corr_Y_I', 'Corr_Y_G', ...[] 
+ []
+
+
+Overfull \hbox (69.74638pt too wide) in paragraph at lines 225--225
+[]                            \OT1/cmtt/m/n/10 'Corr_C_Y', 'Corr_C_C', 'Corr_C_I', 'Corr_C_G', ...[] 
+ []
+
+
+Overfull \hbox (69.74638pt too wide) in paragraph at lines 225--225
+[]                            \OT1/cmtt/m/n/10 'Corr_I_Y', 'Corr_I_C', 'Corr_I_I', 'Corr_I_G', ...[] 
+ []
+
+
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 225--225
+[]                            \OT1/cmtt/m/n/10 'Corr_G_Y', 'Corr_G_C', 'Corr_G_I', 'Corr_G_G'});[] 
+ []
+
+
+Overfull \hbox (43.49661pt too wide) in paragraph at lines 250--250
+[]\OT1/cmtt/m/n/10 Contemporaneous Output Correlations of Cyclical Components for subsample 1[] 
+ []
+
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 250--250
+[]\OT1/cmtt/m/n/10 -----------------------------------------------------------------------[] 
+ []
+
+
+Overfull \hbox (1098.73741pt too wide) in paragraph at lines 250--250
+[]     \OT1/cmtt/m/n/10 Std_Y      Std_C      Std_I      Std_G     RSD_Y     RSD_C    RSD_I     RSD_G     Corr_Y_Y    Corr_Y_C    Corr_Y_I    Corr_Y_G    Corr_C_Y    Corr_C_C    Corr_C_I    Corr_C_G    Corr_I_Y    Corr_I_C    Corr_I_I    Corr_I_G    Corr_G_Y    Corr_G_C    Corr_G_I    Corr_G_G[] 
+ []
+
+
+Overfull \hbox (1098.73741pt too wide) in paragraph at lines 250--250
+[]    \OT1/cmtt/m/n/10 _______    _______    _______    _______    ______    _____    ______    ______    ________    ________    ________    ________    ________    ________    ________    ________    ________    ________    ________    ________    ________    ________    ________    ________[] 
+ []
+
+[7]
+Overfull \hbox (1077.7376pt too wide) in paragraph at lines 250--250
+[]    \OT1/cmtt/m/n/10 0.18006    0.16839    0.19437    0.16324    1.4035    1.383    1.7198    1.4305       1        0.99831     0.98766     0.98313     0.99831        1        0.99048     0.97869     0.98766     0.99048        1        0.95424     0.98313     0.97869     0.95424        1[] 
+ []
+
+
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 291--291
+[]\OT1/cmtt/m/n/10 % Summary table for the "from 2008Q1" sample (hereafter called "subsample 2"[] 
+ []
+
+
+Overfull \hbox (38.24666pt too wide) in paragraph at lines 291--291
+[]\OT1/cmtt/m/n/10 fprintf('Standard deviations of cyclical components for subsample 2:\n');[] 
+ []
+
+
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 291--291
+[]\OT1/cmtt/m/n/10 corr_matrix1 = corrcoef([Y_cycle2, C_cycle2, I_cycle2, G_cycle2]);[] 
+ []
+
+
+Overfull \hbox (85.49625pt too wide) in paragraph at lines 291--291
+[]\OT1/cmtt/m/n/10 disp('Contemporaneous Output Correlations of Cyclical Components for subsample 2')[] 
+ []
+
+
+Overfull \hbox (69.74638pt too wide) in paragraph at lines 291--291
+[]\OT1/cmtt/m/n/10 disp('-----------------------------------------------------------------------')[] 
+ []
+
+
+Overfull \hbox (190.49533pt too wide) in paragraph at lines 291--291
+[]\OT1/cmtt/m/n/10 T2 = table(std_Y_cycle2, std_C_cycle2, std_I_cycle2, std_G_cycle2, Y_rsd1, C_rsd1, I_rsd1, G_rsd1, ...[] 
+ []
+
+
+Overfull \hbox (122.24593pt too wide) in paragraph at lines 291--291
+[]          \OT1/cmtt/m/n/10 corr_matrix1(1,1), corr_matrix1(1,2), corr_matrix1(1,3), corr_matrix1(1,4), ...[] 
+ []
+
+
+Overfull \hbox (122.24593pt too wide) in paragraph at lines 291--291
+[]          \OT1/cmtt/m/n/10 corr_matrix1(2,1), corr_matrix1(2,2), corr_matrix1(2,3), corr_matrix1(2,4), ...[] 
+ []
+
+
+Overfull \hbox (122.24593pt too wide) in paragraph at lines 291--291
+[]          \OT1/cmtt/m/n/10 corr_matrix1(3,1), corr_matrix1(3,2), corr_matrix1(3,3), corr_matrix1(3,4), ...[] 
+ []
+
+
+Overfull \hbox (122.24593pt too wide) in paragraph at lines 291--291
+[]          \OT1/cmtt/m/n/10 corr_matrix1(4,1), corr_matrix1(4,2), corr_matrix1(4,3), corr_matrix1(4,4), ...[] 
+ []
+
+
+Overfull \hbox (195.74529pt too wide) in paragraph at lines 291--291
+[]          \OT1/cmtt/m/n/10 'VariableNames', {'Std_Y', 'Std_C', 'Std_I', 'Std_G', 'RSD_Y', 'RSD_C', 'RSD_I', 'RSD_G', ...[] 
+ []
+
+
+Overfull \hbox (69.74638pt too wide) in paragraph at lines 291--291
+[]                            \OT1/cmtt/m/n/10 'Corr_Y_Y', 'Corr_Y_C', 'Corr_Y_I', 'Corr_Y_G', ...[] 
+ []
+
+[8]
+Overfull \hbox (69.74638pt too wide) in paragraph at lines 291--291
+[]                            \OT1/cmtt/m/n/10 'Corr_C_Y', 'Corr_C_C', 'Corr_C_I', 'Corr_C_G', ...[] 
+ []
+
+
+Overfull \hbox (69.74638pt too wide) in paragraph at lines 291--291
+[]                            \OT1/cmtt/m/n/10 'Corr_I_Y', 'Corr_I_C', 'Corr_I_I', 'Corr_I_G', ...[] 
+ []
+
+
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 291--291
+[]                            \OT1/cmtt/m/n/10 'Corr_G_Y', 'Corr_G_C', 'Corr_G_I', 'Corr_G_G'});[] 
+ []
+
+
+Overfull \hbox (43.49661pt too wide) in paragraph at lines 316--316
+[]\OT1/cmtt/m/n/10 Contemporaneous Output Correlations of Cyclical Components for subsample 2[] 
+ []
+
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 316--316
+[]\OT1/cmtt/m/n/10 -----------------------------------------------------------------------[] 
+ []
+
+
+Overfull \hbox (1140.73705pt too wide) in paragraph at lines 316--316
+[]     \OT1/cmtt/m/n/10 Std_Y       Std_C       Std_I       Std_G      RSD_Y      RSD_C      RSD_I      RSD_G     Corr_Y_Y    Corr_Y_C    Corr_Y_I    Corr_Y_G    Corr_C_Y    Corr_C_C    Corr_C_I    Corr_C_G    Corr_I_Y    Corr_I_C    Corr_I_I    Corr_I_G    Corr_G_Y    Corr_G_C    Corr_G_I    Corr_G_G[] 
+ []
+
+
+Overfull \hbox (1140.73705pt too wide) in paragraph at lines 316--316
+[]    \OT1/cmtt/m/n/10 ________    ________    ________    _______    _______    _______    _______    _______    ________    ________    ________    ________    ________    ________    ________    ________    ________    ________    ________    ________    ________    ________    ________    ________[] 
+ []
+
+
+Overfull \hbox (1119.73723pt too wide) in paragraph at lines 316--316
+[]    \OT1/cmtt/m/n/10 0.039122    0.032702    0.063977    0.05172    0.29695    0.26113    0.54754    0.44013       1        0.99821     0.91776     0.99002     0.99821        1        0.90462     0.99243     0.91776     0.90462        1        0.87846     0.99002     0.99243     0.87846        1[] 
+ []
+
+[9] (/Users/heinzemax/Documents/GitHub/macro2/assignment1/html/.texpadtmp/Assignment_1_code.aux) ) 
+Here is how much of TeX's memory you used:
+ 909 strings out of 479384
+ 15281 string characters out of 5869413
+ 301150 words of memory out of 5000000
+ 18069 multiletter control sequences out of 15000+600000
+ 405143 words of font info for 33 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 66i,5n,72p,1011b,268s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on /Users/heinzemax/Documents/GitHub/macro2/assignment1/html/.texpadtmp/Assignment_1_code.dvi (9 pages, 22820 bytes).
